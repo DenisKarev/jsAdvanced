@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review adding page</title>
+    <script src="./ls.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <button class="back-button" onclick="locSt.clearCurrentProduct();history.go(-1)">back to products page</button>
+    <br>
+    <h1 class="products product-title"></h1>
+    <br>
+    <input type="text" class="reviews-add-input" required placeholder="product name">
+    <button class="reviews-add-button" onclick="locSt.addReview(event)">add</button>
+    <div class="error"></div>
+    <script>
+        const locSt = new LS();
+        // console.log(localStorage.getItem('CurrentProduct'));
+        // console.log(locSt.getProductById(localStorage.getItem('CurrentProduct')).product);
+        document.querySelector('.product-title').textContent = locSt.getProductById(localStorage.getItem('CurrentProduct')).product;
+
+    </script>
+</body>
+</html>

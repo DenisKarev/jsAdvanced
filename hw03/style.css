@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightslategrey;
+}
+
+.products {
+  font-family: "Courier New", Courier, monospace;
+  background-color: lightslategrey;
+  color: whitesmoke;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-title {
+  cursor: pointer;
+  margin: 1rem 0rem 1rem 5rem;
+}
+
+.reviews {
+  text-decoration: none;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  cursor: auto;
+}
+.reviews-item {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+}
+.reviews-item:nth-child(1n) {
+  background-color: rgb(108, 121, 134);
+}
+.reviews-item:nth-child(2n) {
+  background-color: rgb(132, 154, 175);
+}
+.reviews-del-button, .reviews-add-button {
+  margin-left: 1rem;
+  padding: 0.3rem;
+}
+.reviews-add-input {
+  font-family: "Courier New", Courier, monospace;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.addreview {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.2rem 0.4rem;
+  max-width: 10rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: brown;
+  font-weight: bolder;
+}

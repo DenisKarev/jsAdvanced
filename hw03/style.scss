@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-size: 24px;
+}
+
+body {
+    background-color: lightslategrey;
+}
+
+.products {
+    font-family: 'Courier New', Courier, monospace;
+    // font-weight: bold;
+    background-color: lightslategrey;
+    color: whitesmoke;
+    // padding-top: 1rem;
+    // padding-bottom: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    // height: 100vh;
+}
+
+.product-title {
+    cursor: pointer;
+    // font-family: inherit;  
+    margin: 1rem 0rem 1rem 5rem;
+}
+
+.reviews {
+    text-decoration: none;
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    cursor: auto;
+
+    &-item {
+        display: inline-block;
+        // margin: 1rem 2rem;
+        padding: .5rem .5rem;
+        font-size: 1.5rem;
+
+        &:nth-child(1n) {
+            background-color: rgb(108, 121, 134);
+        }
+
+        &:nth-child(2n) {
+            background-color: rgb(132, 154, 175);
+        }
+    }
+
+    &-del-button, &-add-button {
+        margin-left: 1rem;
+        padding: .3rem;
+    }
+    &-add-input {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 1rem;
+        padding: .5rem;
+    }
+}
+
+.addreview {
+    font-family: 'Courier New', Courier, monospace;
+    padding: .2rem .4rem;
+    max-width: 10rem;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: brown;
+    font-weight: bolder;
+}
